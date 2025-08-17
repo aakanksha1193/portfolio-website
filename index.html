@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hello, I'm <span>Your Name</span></h2>
+    <p>Aspiring Software Developer | Java | Web Development</p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer skilled in Java, Web Development, and Machine Learning.
+       I love solving problems and building real-world projects.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Student Result Management (Java)</h3>
+        <p>Console-based project to manage and display student results.</p>
+        <a href="https://github.com/YOUR_USERNAME/Student-Result-Management" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Library Management System (Java)</h3>
+        <p>Library system with add/search/issue/return functionality.</p>
+        <a href="https://github.com/YOUR_USERNAME/Library-Management-System" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
